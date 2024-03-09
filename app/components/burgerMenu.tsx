@@ -12,7 +12,7 @@ const styles = {
     top: '16px',
   },
   bmBurgerBars: {
-    background: 'black' 
+    background: 'black'
   },
   bmCross: {
     background: 'white'
@@ -59,47 +59,47 @@ export default function BurgerMenu() {
           <ul className="flex flex-col">
             <li className="mb-4">
               <button className="hover:opacity-50 underline"
-                onClick={()=>{handleCloseMenu()}}
+                onClick={() => { handleCloseMenu() }}
               >
                 プロフィール編集
               </button>
             </li>
             <li className="mb-4">
               <button className="hover:opacity-50 underline"
-                onClick={()=>{handleCloseMenu()}}
+                onClick={() => { handleCloseMenu() }}
               >
                 フォロー
               </button>
             </li>
             <li className="mb-4">
               <button className="hover:opacity-50 underline"
-                onClick={()=>{handleCloseMenu()}}
+                onClick={() => { handleCloseMenu() }}
               >
                 保存
               </button>
             </li>
             <li className="mb-4">
               <button className="hover:opacity-50 underline"
-                onClick={()=>{handleCloseMenu()}}
+                onClick={() => { handleCloseMenu() }}
               >
                 ログイン
               </button>
             </li>
             <li className="mb-4">
               <button className="hover:opacity-50 underline"
-                onClick={()=>{handleCloseMenu()}}
+                onClick={() => { handleCloseMenu() }}
               >
                 サインアップ
               </button>
             </li>
             <li className="mb-4">
               <button className="hover:opacity-50  underline "
-                onClick={()=>{handleCloseMenu()}}
+                onClick={() => { handleCloseMenu() }}
               >
                 ログアウト
               </button>
             </li>
-       
+
           </ul>
         </main>
       </Menu>
