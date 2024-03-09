@@ -54,7 +54,7 @@ export default function Login() {
                 <input
                     id="email"
                     type="email"
-                    className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-300"
+                    className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-300 text-black"
                     placeholder='email'
                     {...register('email', { required: 'メールアドレスを入力してください。' })}
                 />
@@ -66,14 +66,14 @@ export default function Login() {
                 <input
                     id="password"
                     type="password"
-                    className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-300"
+                    className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-300 text-black"
                     placeholder='password'
                     {...register('password', { required: 'パスワードを入力してください。' })}
                 />
                 <span className="text-red-600">{errors.password && errors.password.message}</span>
             </div>
                 
-            <button type="submit" className="bg-blue-500 rounded-xl text-white h-10 hover:bg-sky-300">
+            <button type="submit" className="bg-blue-500 rounded-xl text-white h-10 hover:bg-sky-300 ">
                 Login
             </button>
             </form>

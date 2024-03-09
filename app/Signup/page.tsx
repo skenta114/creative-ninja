@@ -47,7 +47,7 @@ export default function Signup() {
           <input 
             id="name"
             type="text"
-            className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-300"
+            className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-300 text-black"
             placeholder='name'
             {...register('name', { required: '名前を入力してください。' })}
           />
@@ -59,7 +59,7 @@ export default function Signup() {
           <input
             id="email"
             type="email"
-            className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-300"
+            className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-300 text-black"
             placeholder='email'
             {...register('email', { required: 'メールアドレスを入力してください。' })}
           />
