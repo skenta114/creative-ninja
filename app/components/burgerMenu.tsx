@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link';
 import { useState } from 'react';
-import { slide as Menu, State } from 'react-burger-menu'
+import { slide as Menu, State } from 'react-burger-menu';
 
 // Menuコンポーネントに適用させるCSS
 const styles = {
@@ -65,7 +65,7 @@ export default function BurgerMenu() {
               <button className="hover:opacity-50 underline"
                 onClick={() => { handleCloseMenu() }}
               >
-                プロフィール編集
+                <Link href={"./profile"}>プロフィール編集</Link>
               </button>
             </li>
             <li className="mb-4">

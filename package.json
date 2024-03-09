@@ -19,12 +19,14 @@
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18",
     "react-hook-form": "^7.51.0",
+    "styled-components": "^6.1.8"
     "supabase": "^1.148.6"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/node": "^20",
     "@types/react": "^18",
+    "@types/react-burger-menu": "^2.8.7",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
