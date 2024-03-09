@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link';
 import { useState } from 'react';
 import { slide as Menu, State } from 'react-burger-menu'
 
@@ -68,28 +69,29 @@ export default function BurgerMenu() {
               <button className="hover:opacity-50 underline"
                 onClick={()=>{handleCloseMenu()}}
               >
-                フォロー
+                
+                <Link href={"/post"}>投稿 </Link>
               </button>
             </li>
             <li className="mb-4">
               <button className="hover:opacity-50 underline"
                 onClick={()=>{handleCloseMenu()}}
               >
-                保存
+                フォロー一覧
               </button>
             </li>
             <li className="mb-4">
               <button className="hover:opacity-50 underline"
                 onClick={()=>{handleCloseMenu()}}
               >
-                ログイン
+                <Link href={"/Login"}>ログイン </Link>
               </button>
             </li>
             <li className="mb-4">
               <button className="hover:opacity-50 underline"
                 onClick={()=>{handleCloseMenu()}}
               >
-                サインアップ
+                <Link href={"/Signup"}>サインアップ </Link>
               </button>
             </li>
             <li className="mb-4">
