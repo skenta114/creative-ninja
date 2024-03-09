@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { supabase } from '@/utils/supabaseClient';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 
@@ -14,7 +15,8 @@ interface SignupFormInputs {
 }
 
 export default function Signup() {
-  const { register, handleSubmit, formState: { errors } } = useForm<SignupFormInputs>();
+    const router = useRouter()
+    const { register, handleSubmit, formState: { errors } } = useForm<SignupFormInputs>();
     const [error, setError] = useState<string | null>(null);
 
   // Signupボタンの設定
@@ -29,7 +31,8 @@ export default function Signup() {
       } else {
         console.log('Sign up successful!', response.data.user);
         // リダイレクトまたは他の処理を追加する
-      }
+        }
+        router.push('/Login')
       } catch (error: any) {
       setError(error.message);
     }
@@ -78,7 +81,7 @@ export default function Signup() {
           <span className="text-red-600">{errors.password && errors.password.message}</span>
         </div>
         {error && <span className="text-red-600">{error}</span>}
-        <button type="submit" className="bg-blue-500 rounded-xl text-white h-10">
+        <button type="submit" className="bg-blue-500 rounded-xl text-white h-10 hover:bg-sky-300">
           Signup
         </button>
       </form>
