@@ -19,7 +19,7 @@
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18",
     "react-hook-form": "^7.51.0",
-    "styled-components": "^6.1.8"
+    "styled-components": "^6.1.8",
     "supabase": "^1.148.6"
   },
   "devDependencies": {
