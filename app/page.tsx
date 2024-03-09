@@ -2,10 +2,6 @@
 
 import Link from "next/link";
 import { useAuth } from "@/utils/auth";
-import { useEffect, useState } from "react";
-import { supabase } from '@/utils/supabaseClient';
-import Signup from "./Signup/page";
-import Login from "./Login/page";
 
 export default function Home() {
   const x = useAuth ()
