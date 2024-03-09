@@ -98,10 +98,10 @@ export default function BurgerMenu() {
               </button>
             </li>
             <li className="mb-4">
-              <button className="hover:opacity-50  underline "
+              <button className="hover:opacity-50 underline"
                 onClick={() => { handleCloseMenu() }}
               >
-                ログアウト
+                <Link href={"/Logout"}>ログアウト </Link>
               </button>
             </li>
 
