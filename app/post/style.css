@@ -1,0 +1,23 @@
+.fileUpLoad{
+  display: inline-block;
+  cursor: pointer; /* カーソルを指に */
+  margin: 0.5em 0; /* まわりの余白 */
+  padding: .7em 1em; /* 文字まわりの余白 */
+  line-height: 1.4; /* 行間 */
+  background: #d4d4d4;; /* 背景色 */
+  color: #1b1a1a; /* 文字色 */
+  font-size: 5.0em; /* フォントサイズ */
+  /*border-radius: 2.5em;  角の丸み */
+  /*transition: 0.2s; ホバーをなめらかに */
+  width:320px;
+  /*height: 320px;*/
+  text-align: center;
+  opacity: 5;
+
+}
+
+
+
+.fileUpLoad-input{
+  display: none;
+}
