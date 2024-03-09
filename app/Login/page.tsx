@@ -1,6 +1,7 @@
 'use client'
 
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
+import Head from "next/head";
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
@@ -17,7 +18,11 @@ export default function Login() {
     const { register, handleSubmit, formState: { errors } } = useForm<LoginFormInputs>();
     const [error, setError] = useState < string | null > (null);
 
-    // ログインボタンの設定
+    // やりたいこと
+    //ログイン
+    //うまくいったらエラーではなくuserdataが帰ってくる
+    //データを他のページでも使えるように更新する
+    //ログイン済みユーザがいたらページの表示、いなかったらログインページに
     const login: SubmitHandler<LoginFormInputs> = async (formData) => {
         try {
             const { error } = await supabase.auth.signInWithPassword({
@@ -28,8 +33,9 @@ export default function Login() {
                 setError(error.message);
             } else {
                 console.log('Login succsessfull!');
+                router.push('/')
             }
-            router.push('/')
+
         } catch (error: any) {
             setError(error.message);
         }
