@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <header className="w-full p-2 sticky bg-gray-100">
+    <header className="w-full p-2 sticky bg-gray-100 z-50">
       <nav className="p-2">
         <div className="hidden md:flex justify-between  min-w-3xl">
           <div className='opacity:0'></div>
