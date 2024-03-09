@@ -13,7 +13,7 @@ const styles = {
     top: '16px',
   },
   bmBurgerBars: {
-    background: 'black' 
+    background: '#696969'
   },
   bmCross: {
     background: 'white'
@@ -30,6 +30,8 @@ const styles = {
   bmItemList: {
     color: 'white',
   },
+
+
 }
 
 export default function BurgerMenu() {
@@ -55,53 +57,54 @@ export default function BurgerMenu() {
         outerContainerId={'outer-container'}
         right={true}
         styles={styles}
+
       >
         <main id="page-wrap">
           <ul className="flex flex-col">
             <li className="mb-4">
               <button className="hover:opacity-50 underline"
-                onClick={()=>{handleCloseMenu()}}
+                onClick={() => { handleCloseMenu() }}
               >
                 プロフィール編集
               </button>
             </li>
             <li className="mb-4">
               <button className="hover:opacity-50 underline"
-                onClick={()=>{handleCloseMenu()}}
+                onClick={() => { handleCloseMenu() }}
               >
-                
+
                 <Link href={"/post"}>投稿 </Link>
               </button>
             </li>
             <li className="mb-4">
               <button className="hover:opacity-50 underline"
-                onClick={()=>{handleCloseMenu()}}
+                onClick={() => { handleCloseMenu() }}
               >
                 フォロー一覧
               </button>
             </li>
             <li className="mb-4">
               <button className="hover:opacity-50 underline"
-                onClick={()=>{handleCloseMenu()}}
+                onClick={() => { handleCloseMenu() }}
               >
                 <Link href={"/Login"}>ログイン </Link>
               </button>
             </li>
             <li className="mb-4">
               <button className="hover:opacity-50 underline"
-                onClick={()=>{handleCloseMenu()}}
+                onClick={() => { handleCloseMenu() }}
               >
                 <Link href={"/Signup"}>サインアップ </Link>
               </button>
             </li>
             <li className="mb-4">
               <button className="hover:opacity-50  underline "
-                onClick={()=>{handleCloseMenu()}}
+                onClick={() => { handleCloseMenu() }}
               >
                 ログアウト
               </button>
             </li>
-       
+
           </ul>
         </main>
       </Menu>
