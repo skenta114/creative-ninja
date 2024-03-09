@@ -1,10 +1,11 @@
+'use client'
+
 import Link from "next/link";
-import Signup from "./Signup/page";
-import Login from "./Login/page";
+import { useAuth } from "@/utils/auth";
 
 export default function Home() {
+  const x = useAuth ()
   return (
-
     <main className="w-full">
       <p>hello, world</p>
       <div>

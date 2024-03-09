@@ -13,7 +13,7 @@ const styles = {
     top: '16px',
   },
   bmBurgerBars: {
-    background: 'black'
+    background: '#696969'
   },
   bmCross: {
     background: 'white'
@@ -30,6 +30,8 @@ const styles = {
   bmItemList: {
     color: 'white',
   },
+
+
 }
 
 export default function BurgerMenu() {
@@ -55,6 +57,7 @@ export default function BurgerMenu() {
         outerContainerId={'outer-container'}
         right={true}
         styles={styles}
+
       >
         <main id="page-wrap">
           <ul className="flex flex-col">
@@ -69,35 +72,36 @@ export default function BurgerMenu() {
               <button className="hover:opacity-50 underline"
                 onClick={() => { handleCloseMenu() }}
               >
-                フォロー
+
+                <Link href={"/post"}>投稿 </Link>
               </button>
             </li>
             <li className="mb-4">
               <button className="hover:opacity-50 underline"
                 onClick={() => { handleCloseMenu() }}
               >
-                保存
+                フォロー一覧
               </button>
             </li>
             <li className="mb-4">
               <button className="hover:opacity-50 underline"
                 onClick={() => { handleCloseMenu() }}
               >
-                ログイン
+                <Link href={"/Login"}>ログイン </Link>
               </button>
             </li>
             <li className="mb-4">
               <button className="hover:opacity-50 underline"
                 onClick={() => { handleCloseMenu() }}
               >
-                サインアップ
+                <Link href={"/Signup"}>サインアップ </Link>
               </button>
             </li>
             <li className="mb-4">
-              <button className="hover:opacity-50  underline "
+              <button className="hover:opacity-50 underline"
                 onClick={() => { handleCloseMenu() }}
               >
-                ログアウト
+                <Link href={"/Logout"}>ログアウト </Link>
               </button>
             </li>
 
