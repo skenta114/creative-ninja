@@ -21,11 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        <MantineProvider>
-          {children}
-        </MantineProvider>
-        <Footer />
+        <div className="BodyWrapper">
+          <Header />
+          <MantineProvider>
+            {children}
+          </MantineProvider>
+          <Footer />
+        </div>
       </body>
     </html>
   );
