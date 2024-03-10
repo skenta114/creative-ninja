@@ -2,14 +2,10 @@
 
 import Link from "next/link";
 import './style_login.css';
-
-import { createClient, SupabaseClient } from '@supabase/supabase-js';
-import Head from "next/head";
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { supabase } from '@/utils/supabaseClient';
-import Signup from "../Signup/page";
 
 
 // フォームの入力項目
