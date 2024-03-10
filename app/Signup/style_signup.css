@@ -1,0 +1,25 @@
+.title {
+    color: blue;
+    border-bottom: solid 3px blue;
+    text-align: center;
+    font-size: 200%;
+    margin-bottom: 20px;
+}
+
+.small_title {
+    font-size: 150%;
+    text-align: left;
+}
+
+.button {
+    background-color: #4299e1;
+    /* 青色の背景 */
+    border-radius: 1rem;
+    /* 大きな角を持つ角丸 */
+    color: #ffffff;
+    /* 白色のテキスト */
+    height: 2.5rem;
+    /* 高さが10の単位 */
+    font-weight: bold;
+    font-size: 20px;
+}
