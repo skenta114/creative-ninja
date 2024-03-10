@@ -40,7 +40,7 @@ export default function Signup() {
   };
   return (
     <main className="flex flex-col justify-center items-center w-full h-screen m-auto">
-      <h1 className="text-2xl mb-8 border-b-2 w-2/3 max-w-lg pb-8 text-center text-black">
+      <h1 className="signup_title">
         Signup
       </h1>
 

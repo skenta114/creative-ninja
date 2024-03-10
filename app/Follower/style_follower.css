@@ -1,6 +1,9 @@
 .wrapping {
     display: flex;
     justify-content: center;
+    z-index: -100000;
+    position: fixed;
+    left: 30%;
 }
 
 .card {
