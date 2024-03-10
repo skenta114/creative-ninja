@@ -39,7 +39,7 @@ export default function Signup() {
     }
   };
   return (
-    <main className="flex flex-col justify-center items-center w-full h-screen m-auto">
+    <main className="flex flex-col justify-center items-center w-full  m-auto h-full">
       <h1 className="signup_title">
         Signup
       </h1>
@@ -50,7 +50,7 @@ export default function Signup() {
           <input
             id="name"
             type="text"
-            className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-300 text-black"
+            className="border border-solid border-[#ddd] rounded-3xl w-full h-12 py-2 px-3 focus:outline-none focus:border-sky-300 text-black"
             placeholder='name'
             {...register('name', { required: '名前を入力してください。' })}
           />
@@ -62,7 +62,7 @@ export default function Signup() {
           <input
             id="email"
             type="email"
-            className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-300 text-black"
+            className="border border-solid border-[#ddd] rounded-3xl w-full h-12 py-2 px-3 focus:outline-none focus:border-sky-300 text-black"
             placeholder='email'
             {...register('email', { required: 'メールアドレスを入力してください。' })}
           />
@@ -74,19 +74,19 @@ export default function Signup() {
           <input
             id="password"
             type="password"
-            className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-300"
+            className="border border-solid border-[#ddd] rounded-3xl w-full h-12 py-2 px-3 focus:outline-none focus:border-sky-300 text-black"
             placeholder='password'
             {...register('password', { required: 'パスワードを入力してください。' })}
           />
           <span className="text-red-600">{errors.password && errors.password.message}</span>
         </div>
         {error && <span className="text-red-600">{error}</span>}
-        <button type="submit" className="bg-blue-500 rounded-xl text-white h-10 hover:bg-sky-300">
-          Signup
+        <button type="submit" className="signup_button_solid">
+          <a>Signup</a>
         </button>
       </form>
-      <div className="mt-4">
-        <Link href={"./Login"}>
+      <div className="mt-4 ">
+        <Link href={"./Login"} className='Relogin' >
           Login
         </Link>
       </div>
