@@ -80,7 +80,7 @@ export default function BurgerMenu() {
               <button className="hover:opacity-50 underline"
                 onClick={() => { handleCloseMenu() }}
               >
-                フォロー一覧
+                <Link href={"/Follower"}>フォロー一覧  </Link>
               </button>
             </li>
             <li className="mb-4">

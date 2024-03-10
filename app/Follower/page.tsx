@@ -36,7 +36,7 @@ export default function ArticleCardFooter() {
                         decorations
                     </Badge>
 
-                    <Text fw={700} className="title" mt="xs">
+                    <Text fw={700} className="follower_title" mt="xs">
                         投稿の時のコメント
                     </Text>
 
