@@ -6,11 +6,10 @@ import { slide as Menu, State } from 'react-burger-menu';
 // Menuコンポーネントに適用させるCSS
 const styles = {
   bmBurgerButton: {
-    position: 'fixed',
+    position: 'absolute',
+    right: '20px',
     width: '32px',
     height: '26px',
-    right: '20px',
-    top: '16px',
   },
   bmBurgerBars: {
     background: '#696969'
@@ -19,9 +18,8 @@ const styles = {
     background: 'white'
   },
   bmMenuWrap: {
-    position: 'fixed',
     height: '100%',
-    top: "0"
+
   },
   bmMenu: {
     background: 'dimgray',
@@ -30,8 +28,6 @@ const styles = {
   bmItemList: {
     color: 'white',
   },
-
-
 }
 
 export default function BurgerMenu() {
