@@ -73,8 +73,8 @@ export default function Login() {
                     <span className="text-red-600">{errors.password && errors.password.message}</span>
                 </div>
 
-                <button type="submit" className="login_button_solid ">
-                    <a> Login </a>
+                <button type="submit" className="bg-blue-500 rounded-xl text-white h-10 hover:bg-sky-300 ">
+                    Login
                 </button>
                 <p className="signup">新規登録の方は<Link href={"./Signup"} className="link">こちら</Link></p>
             </form>

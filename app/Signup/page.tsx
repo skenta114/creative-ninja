@@ -81,8 +81,8 @@ export default function Signup() {
           <span className="text-red-600">{errors.password && errors.password.message}</span>
         </div>
         {error && <span className="text-red-600">{error}</span>}
-        <button type="submit" className="signup_button_solid">
-          <a>Signup</a>
+        <button type="submit" className="bg-blue-500 rounded-xl text-white h-10 hover:bg-sky-300">
+          Signup
         </button>
       </form>
       <div className="mt-4 ">

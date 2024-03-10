@@ -1,0 +1,19 @@
+.logout_title {
+  color: black;
+  border-bottom: solid 3px rgb(55, 55, 61);
+  text-align: center;
+  font-size: 200%;
+  margin-bottom: 64px;
+  width: 50%;
+  font-family: Impact;
+  /* パーセンテージで幅を指定 */
+}
+
+.button {
+  background-color: #f20909;
+  border-radius: 1rem;
+  color: #ffffff;
+  height: 2.5rem;
+  font-weight: bold;
+  font-size: 20px;
+}
