@@ -1,9 +1,10 @@
-.title {
+.signup_title {
     color: blue;
     border-bottom: solid 3px blue;
     text-align: center;
     font-size: 200%;
     margin-bottom: 20px;
+    width: 50%;
 }
 
 .small_title {
