@@ -56,7 +56,7 @@ export default function BurgerMenu() {
 
       >
         <main id="page-wrap">
-          <ul className="flex flex-col">
+          <ul className="flex flex-col z-[10]">
             <li className="mb-4">
               <button className="hover:opacity-50 underline"
                 onClick={() => { handleCloseMenu() }}
