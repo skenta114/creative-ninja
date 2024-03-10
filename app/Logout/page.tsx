@@ -16,9 +16,18 @@ const LogoutButton = () => {
   };
 
   return (
-    <button className="text-black" onClick={handleLogout}>
-      ログアウト
-    </button>
+    <main className="flex flex-col justify-center items-center w-full h-screen m-auto">
+      <h1 className="text-2xl mb-8 border-b-2 w-2/3 max-w-lg pb-8 text-center text-black">
+        Logout
+      </h1>
+      <form onSubmit={handleLogout}
+        className="grid grid-cols-1 gap-10 w-2/3 max-w-lg"
+      >
+        <button className="bg-red-500 rounded-xl text-white h-10 hover:bg-gray-400" onClick={handleLogout}>
+          ログアウト
+        </button>
+      </form>
+    </main>
   );
 };
 
