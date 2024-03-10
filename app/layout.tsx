@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./components/header";
 import { MantineProvider } from "@mantine/core";
 import '@mantine/core/styles.css'
+import Footer from "./components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <MantineProvider>
           {children}
         </MantineProvider>
+        <Footer />
       </body>
     </html>
   );
