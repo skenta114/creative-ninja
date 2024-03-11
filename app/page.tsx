@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import { useEffect, useState } from "react";
 import {
   GoogleMap,
@@ -15,18 +15,9 @@ dotenv.config();
 const public_url =
   "https://ypiitqzrcwvannvqfhew.supabase.co/storage/v1/object/public/picturs/img/";
 const containerStyle = {
+  // zIndex: -1,
   height: "100vh",
   width: "100%",
-};
-
-const positionAkiba = {
-  lat: 35.69731,
-  lng: 139.7747,
-};
-
-const positionIwamotocho = {
-  lat: 35.69397,
-  lng: 139.7762,
 };
 
 const divStyle = {
@@ -135,8 +126,8 @@ const MyComponent = () => {
       <div style={{ flexWrap: "wrap" }}>
         <h1>投稿</h1>
         <div style={{ margin: "10px", width: "200px" }}>
-          {urlList.map((url) => (
-            <img src={public_url + url.url} />
+          {urlList.map((url, index) => (
+            <img key={index} src={public_url + url.url} />
           ))}
         </div>
       </div>
@@ -153,7 +144,7 @@ const SimpleMap = ({ lat, lng, urlList }) => {
     return setSize(new window.google.maps.Size(0, -45));
   };
   return (
-    <main className="flex flex-col justify-center items-center w-full h-screen m-auto">
+    <main className="flex flex-col justify-center items-center w-full h-screen m-auto -z-20">
       <LoadScript
         googleMapsApiKey={process.env.GOOGLEMAP_API_KEY || ""}
         onLoad={() => createOffsetSize()}
@@ -169,8 +160,8 @@ const SimpleMap = ({ lat, lng, urlList }) => {
               "https://maps.google.com/mapfiles/kml/paddle/blu-circle-lv.png"
             }
           />
-          {urlList.map((place: any) => (
-            <div key={place.url}>
+          {urlList.map((place: any, index) => (
+            <div key={index}>
               <Marker position={{ lat: place.lat, lng: place.lng }} />
               <InfoWindow
                 position={{ lat: place.lat, lng: place.lng }}
